@@ -1,0 +1,5 @@
+- **Property Landing Page:** A visually-driven homepage featuring a high-impact hero section and a professional overview of the community to establish the brand identity.
+- **Interactive Floor Plan Browser:** A dedicated section for users to explore available unit types, including specific details on pricing, square footage, and bedroom/bathroom configurations.
+- **Amenities & Neighborhood Showcase:** Comprehensive displays of on-site features (such as the pool or fitness center) and local area highlights to showcase the lifestyle and convenience of the location.
+- **Visual Media Gallery:** A structured gallery for high-resolution property photos and media to provide prospective residents with a realistic sense of the living spaces and common areas.
+- **Leasing Inquiry System:** A streamlined contact and lead capture interface for prospective residents to easily request information, check availability, or schedule property tours.
