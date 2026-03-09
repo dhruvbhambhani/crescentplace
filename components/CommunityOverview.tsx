@@ -42,10 +42,6 @@ const CommunityOverview = () => {
                 <p className="text-slate-500 text-sm uppercase tracking-wider">On-site Facility</p>
               </div>
             </div>
-
-            <button className="text-slate-900 font-bold uppercase tracking-widest text-sm border-b-2 border-slate-900 pb-1 hover:opacity-70 transition-opacity">
-              Learn More About Us
-            </button>
           </div>
 
           <div className="relative">

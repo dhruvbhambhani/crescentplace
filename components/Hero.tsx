@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -25,12 +26,18 @@ const Hero = () => {
           <span className="italic text-4xl md:text-6xl block mt-2">Apartments</span>
         </h1>
         <div className="flex flex-col sm:flex-row gap-4 mt-4">
-          <button className="bg-white text-slate-900 px-10 py-4 text-sm font-bold uppercase tracking-widest hover:bg-slate-100 transition-colors">
+          <Link
+            href="/floorplans"
+            className="bg-white text-slate-900 px-10 py-4 text-sm font-bold uppercase tracking-widest hover:bg-slate-100 transition-colors inline-flex items-center justify-center"
+          >
             View Floor Plans
-          </button>
-          <button className="border-2 border-white text-white px-10 py-4 text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-slate-900 transition-all">
+          </Link>
+          <Link
+            href="/contact"
+            className="border-2 border-white text-white px-10 py-4 text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-slate-900 transition-all inline-flex items-center justify-center"
+          >
             Schedule a Tour
-          </button>
+          </Link>
         </div>
       </div>
 
