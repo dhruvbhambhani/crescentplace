@@ -19,17 +19,17 @@ const Neighborhood = () => {
           <div className="order-2 lg:order-1">
             <div className="aspect-square bg-slate-100 relative overflow-hidden">
               {/* Placeholder for a map or neighborhood image */}
-              <img 
-                src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1200&auto=format&fit=crop" 
-                alt="Houston Neighborhood" 
+              <img
+                src="/picas/6.jpg"
+                alt="Crescent Place Community"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               />
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="bg-white p-6 shadow-2xl text-center max-w-xs">
+                <a href="https://maps.app.goo.gl/nNtpUgfEW5KffWLu9" target="_blank" rel="noopener noreferrer" className="bg-white p-6 shadow-2xl text-center max-w-xs block hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer">
                   <MapPin className="mx-auto mb-4 text-slate-900" size={32} />
                   <h4 className="text-xl font-serif mb-2">10222 S Gessner Rd</h4>
                   <p className="text-sm text-slate-500">Houston, TX 77071</p>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -43,10 +43,10 @@ const Neighborhood = () => {
                 Everything You Need, <br />Right Outside Your Door
               </h2>
             </div>
-            
+
             <p className="text-slate-600 text-lg">
-              Crescent Place puts you at the center of it all. Enjoy easy access to Houston's premier 
-              shopping, dining, and entertainment destinations, while being just minutes away from 
+              Crescent Place puts you at the center of it all. Enjoy easy access to Houston's premier
+              shopping, dining, and entertainment destinations, while being just minutes away from
               major employment hubs and beautiful green spaces.
             </p>
 

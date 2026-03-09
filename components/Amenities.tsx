@@ -49,12 +49,12 @@ const Amenities = () => {
               Amenities Designed for Your Comfort
             </h2>
             <p className="text-slate-600 text-lg">
-              At Crescent Place, we've curated a collection of amenities that cater to your every need, 
+              At Crescent Place, we've curated a collection of amenities that cater to your every need,
               whether you're looking to relax, stay active, or connect with neighbors.
             </p>
-            <button className="bg-slate-900 text-white px-8 py-4 text-sm font-bold uppercase tracking-widest hover:bg-slate-800 transition-colors">
-              Explore All Features
-            </button>
+            <a href="/amenities" className="bg-slate-900 text-white px-8 py-4 text-sm font-bold uppercase tracking-widest hover:bg-slate-800 transition-colors inline-block">
+              Explore All Amenities
+            </a>
           </div>
 
           <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">

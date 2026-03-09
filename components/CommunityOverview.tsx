@@ -51,9 +51,9 @@ const CommunityOverview = () => {
           <div className="relative">
             <div className="aspect-[4/5] overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1000&auto=format&fit=crop" 
-                alt="Luxury Apartment Interior" 
-                className="w-full h-full object-cover"
+                src="/Community.jpg" 
+                alt="Crescent Place Community Building and Pool" 
+                className="w-full h-full object-cover object-left"
               />
             </div>
             {/* Decorative element */}

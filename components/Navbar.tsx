@@ -17,11 +17,11 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Floor Plans', href: '#floorplans' },
-    { name: 'Amenities', href: '#amenities' },
-    { name: 'Gallery', href: '#gallery' },
-    { name: 'Neighborhood', href: '#neighborhood' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Floor Plans', href: '/floorplans' },
+    { name: 'Amenities', href: '/amenities' },
+    { name: 'Gallery', href: '/gallery' },
+    { name: 'Neighborhood', href: '/neighborhood' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   return (
@@ -33,25 +33,24 @@ const Navbar = () => {
               CRESCENT PLACE APARTMENTS
             </Link>
           </div>
-          
+
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <Link 
-                key={link.name} 
+              <Link
+                key={link.name}
                 href={link.href}
                 className={`text-sm font-medium uppercase tracking-widest hover:opacity-70 transition-opacity ${isScrolled ? 'text-slate-700' : 'text-white'}`}
               >
                 {link.name}
               </Link>
             ))}
-            <Link 
+            <Link
               href="tel:713-270-4085"
-              className={`flex items-center gap-2 px-4 py-2 rounded-sm border transition-all ${
-                isScrolled 
-                ? 'border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white' 
+              className={`flex items-center gap-2 px-4 py-2 rounded-sm border transition-all ${isScrolled
+                ? 'border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white'
                 : 'border-white text-white hover:bg-white hover:text-slate-900'
-              }`}
+                }`}
             >
               <Phone size={16} />
               <span className="text-sm font-bold">713-270-4085</span>
@@ -60,7 +59,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
-            <button 
+            <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className={`${isScrolled ? 'text-slate-900' : 'text-white'}`}
             >
@@ -74,8 +73,8 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white absolute top-full left-0 w-full shadow-xl py-4 px-4 flex flex-col space-y-4">
           {navLinks.map((link) => (
-            <Link 
-              key={link.name} 
+            <Link
+              key={link.name}
               href={link.href}
               onClick={() => setIsMobileMenuOpen(false)}
               className="text-slate-800 text-lg font-medium border-b border-slate-100 pb-2"
@@ -83,7 +82,7 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
-          <Link 
+          <Link
             href="tel:713-270-4085"
             className="bg-slate-900 text-white text-center py-3 rounded-sm font-bold"
           >

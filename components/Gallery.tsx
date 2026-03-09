@@ -3,20 +3,24 @@
 import React, { useState } from 'react';
 
 const galleryImages = [
-  { id: 1, category: 'Interiors', url: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1200&auto=format&fit=crop', title: 'Modern Living Room' },
-  { id: 2, category: 'Amenities', url: 'https://images.unsplash.com/photo-1582653280643-e79c79219b19?q=80&w=1200&auto=format&fit=crop', title: 'Resort Pool' },
-  { id: 3, category: 'Exteriors', url: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop', title: 'Building Exterior' },
-  { id: 4, category: 'Interiors', url: 'https://images.unsplash.com/photo-1556912177-c54030639a8c?q=80&w=1200&auto=format&fit=crop', title: 'Gourmet Kitchen' },
-  { id: 5, category: 'Amenities', url: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200&auto=format&fit=crop', title: 'Fitness Center' },
-  { id: 6, category: 'Interiors', url: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1200&auto=format&fit=crop', title: 'Master Bedroom' },
+  { id: 1, category: 'Exteriors', url: '/picas/2.jpg', title: 'Community Entrance' },
+  { id: 2, category: 'Exteriors', url: '/picas/6.jpg', title: 'Community Grounds' },
+  { id: 3, category: 'Exteriors', url: '/picas/4.jpg', title: 'Building Exterior' },
+  { id: 4, category: 'Amenities', url: '/picas/8.jpg', title: 'Private Balconies' },
+  { id: 5, category: 'Amenities', url: '/picas/13.jpg', title: 'Tennis Court' },
+  { id: 6, category: 'Amenities', url: '/picas/5.jpg', title: 'Resort-Style Pool' },
+  { id: 7, category: 'Interiors', url: '/picas/download (23).jpg', title: 'Gourmet Kitchen' },
+  { id: 8, category: 'Interiors', url: '/picas/54.jpg', title: 'Living Room with Fireplace' },
+  { id: 9, category: 'Interiors', url: '/picas/59.jpg', title: 'Master Bedroom' },
+  
 ];
 
 const Gallery = () => {
   const [activeFilter, setActiveFilter] = useState('All');
   const filters = ['All', 'Interiors', 'Exteriors', 'Amenities'];
 
-  const filteredImages = activeFilter === 'All' 
-    ? galleryImages 
+  const filteredImages = activeFilter === 'All'
+    ? galleryImages
     : galleryImages.filter(img => img.category === activeFilter);
 
   return (
@@ -31,17 +35,16 @@ const Gallery = () => {
               Picture Yourself Here
             </h2>
           </div>
-          
+
           <div className="flex flex-wrap gap-6">
             {filters.map((filter) => (
               <button
                 key={filter}
                 onClick={() => setActiveFilter(filter)}
-                className={`text-xs font-bold uppercase tracking-widest transition-all pb-1 border-b-2 ${
-                  activeFilter === filter 
-                  ? 'border-white text-white' 
+                className={`text-xs font-bold uppercase tracking-widest transition-all pb-1 border-b-2 ${activeFilter === filter
+                  ? 'border-white text-white'
                   : 'border-transparent text-slate-500 hover:text-slate-300'
-                }`}
+                  }`}
               >
                 {filter}
               </button>
@@ -51,12 +54,12 @@ const Gallery = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {filteredImages.map((image) => (
-            <div 
-              key={image.id} 
+            <div
+              key={image.id}
               className="relative aspect-[4/3] overflow-hidden group cursor-pointer"
             >
-              <img 
-                src={image.url} 
+              <img
+                src={image.url}
                 alt={image.title}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
