@@ -7,10 +7,12 @@ import Gallery from "@/components/Gallery";
 import Neighborhood from "@/components/Neighborhood";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import PromoPopup from "@/components/PromoPopup";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
+      <PromoPopup />
       <Navbar />
       <Hero />
       <CommunityOverview />
